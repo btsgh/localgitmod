@@ -185,6 +185,63 @@
     },
     {
       "key": "schema.__root_schema__.children.status.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.revenue.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.revenue.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.revenue.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.imdb_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.imdb_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.imdb_id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.release_date.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.release_date.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.release_date.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.genres.children.__array_item__.children.name.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.genres.children.__array_item__.children.name.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.genres.children.__array_item__.children.id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.genres.children.__array_item__.children.id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.genres.children.__array_item__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.genres.children.__array_item__.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.genres.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.genres.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.genres.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.genres.cellBorderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -203,6 +260,9 @@
     },
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "schema.__root_schema__.children.release_date.defaultValue"
     }
   ],
   "dynamicTriggerPathList": [
@@ -242,6 +302,118 @@
       "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
+        "genres": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "genres",
+          "backgroundColor": "#FAFAFA",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "cellBoxShadow": "none",
+          "children": {
+            "__array_item__": {
+              "accessor": "__array_item__",
+              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+              "boxShadow": "none",
+              "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+              "cellBoxShadow": "none",
+              "children": {
+                "id": {
+                  "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "accessor": "id",
+                  "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "boxShadow": "none",
+                  "children": {},
+                  "dataType": "number",
+                  "fieldType": "Number Input",
+                  "iconAlign": "left",
+                  "identifier": "id",
+                  "isCustomField": false,
+                  "isDisabled": false,
+                  "isRequired": false,
+                  "isSpellCheck": false,
+                  "isVisible": true,
+                  "label": "Id",
+                  "labelTextSize": "0.875rem",
+                  "originalIdentifier": "id",
+                  "position": 1,
+                  "sourceData": 28
+                },
+                "name": {
+                  "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "accessor": "name",
+                  "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "boxShadow": "none",
+                  "children": {},
+                  "dataType": "string",
+                  "fieldType": "Text Input",
+                  "iconAlign": "left",
+                  "identifier": "name",
+                  "isCustomField": false,
+                  "isDisabled": false,
+                  "isRequired": false,
+                  "isSpellCheck": false,
+                  "isVisible": true,
+                  "label": "Name",
+                  "labelTextSize": "0.875rem",
+                  "originalIdentifier": "name",
+                  "position": 0,
+                  "sourceData": "Action"
+                }
+              },
+              "dataType": "object",
+              "fieldType": "Object",
+              "identifier": "__array_item__",
+              "isCustomField": false,
+              "isDisabled": false,
+              "isRequired": false,
+              "isVisible": true,
+              "label": "Array Item",
+              "labelTextSize": "0.875rem",
+              "originalIdentifier": "__array_item__",
+              "position": -1,
+              "sourceData": {
+                "id": 28,
+                "name": "Action"
+              }
+            }
+          },
+          "dataType": "array",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.genres))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Array",
+          "identifier": "genres",
+          "isCollapsible": true,
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Genres",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "genres",
+          "position": 10,
+          "sourceData": [
+            {
+              "id": 16,
+              "name": "Animation"
+            },
+            {
+              "id": 12,
+              "name": "Adventure"
+            },
+            {
+              "id": 14,
+              "name": "Fantasy"
+            },
+            {
+              "id": 10751,
+              "name": "Family"
+            },
+            {
+              "id": 28,
+              "name": "Action"
+            }
+          ]
+        },
         "homepage": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "homepage",
@@ -264,6 +436,28 @@
           "position": 9,
           "sourceData": "https://www.godzillavskong.net/"
         },
+        "imdb_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "imdb_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.imdb_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "imdb_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Imdb Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "imdb_id",
+          "position": 8,
+          "sourceData": "tt5109280"
+        },
         "poster_path": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "poster_path",
@@ -285,6 +479,55 @@
           "originalIdentifier": "poster_path",
           "position": 8,
           "sourceData": "/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg"
+        },
+        "release_date": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "release_date",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "closeOnSelection": false,
+          "convertToISO": false,
+          "dataType": "string",
+          "dateFormat": "YYYY-MM-DD",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.release_date, \"YYYY-MM-DD\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Datepicker",
+          "identifier": "release_date",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Release Date",
+          "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
+          "originalIdentifier": "release_date",
+          "position": 9,
+          "shortcuts": false,
+          "sourceData": "2021-03-03",
+          "timePrecision": "minute"
+        },
+        "revenue": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "revenue",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.revenue))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "revenue",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Revenue",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "revenue",
+          "position": 7,
+          "sourceData": 111641532
         },
         "status": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
